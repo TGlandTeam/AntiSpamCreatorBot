@@ -127,8 +127,6 @@ return {
 	"^[#!/](superhelp)$",
     "^[#!/](chats)$",
     "^[#!/](chatlist)$",
-    "^[#!/](join) (%d+)$",
-	"^[#!/](join) (.*) (support)$",
     "^[#!/](kickme) (.*)$",
     "^!!tgservice (chat_add_user)$",
     },
