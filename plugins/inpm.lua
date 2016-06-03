@@ -85,38 +85,6 @@ local to = msg.to.type
 local service = msg.service
 local name_log = user_print_name(msg.from)
 
-	if msg.service and user_type == "support" and msg.action.type == "chat_add_user" and msg.from.id == 0 then
-		local user_id = msg.action.user.id
-		local user_name = msg.action.user.print_name
-		local username = msg.action.user.username
-		local group_name = string.gsub(msg.to.print_name, '_', ' ')
-		savelog(msg.from.id, "Added Support member "..user_name.." to chat "..group_name.." (ID:"..msg.to.id..")")
-		if username then
-			send_large_msg("user#id"..user_id, "Added support member\n@"..username.."["..user_id.."] to chat:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
-		else
-			send_large_msg("user#id"..user_id, "Added support member\n["..user_id.."] to chat:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
-		end
-	end
-	if msg.service and user_type == "admin" and msg.action.type == "chat_add_user" and msg.from.id == 0 then
-		local user_id = msg.action.user.id
-		local user_name = msg.action.user.print_name
-		local username = msg.action.user.username
-		savelog(msg.from.id, "Added Admin "..user_name.."  "..user_id.." to chat "..group_name.." (ID:"..msg.to.id..")")
-		if username then
-			send_large_msg("user#id"..user_id, "Added admin\n@"..username.."["..user_id.."] to chat:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
-		else
-			send_large_msg("user#id"..user_id, "Added admin:\n["..user_id.."] to chat:\n 👥 "..group_name.." (ID:"..msg.to.id..")" )
-		end
-	end
-
-	if msg.service and user_type == "regular" and msg.action.type == "chat_add_user" and msg.from.id == 0 then
-		local user_id = msg.action.user.id
-		local user_name = msg.action.user.print_name
-		print("Added "..user_id.." to chat "..msg.to.print_name.." (ID:"..msg.to.id..")")
-		savelog(msg.from.id, "Added "..user_name.." to chat "..msg.to.print_name.." (ID:"..msg.to.id..")")
-		send_large_msg("user#id"..user_id, "Added you to chat:\n\n"..group_name.." (ID:"..msg.to.id..")")
-	end
-
 	if matches[1] == 'help' and msg.to.type == 'user' or matches[1] == 'pmhelp' and is_admin1(msg) and msg.to.type ~= 'user' then
       	savelog(msg.to.id, name_log.." ["..msg.from.id.."] used pm help")
 		text = "Welcome to XManager!\n\nThis is a bot run by @regalstreak for managing the official halogenOS (XOS) group @halogenOS on Telegram\n\nCheck out our channel @halogenOSNews\n\nAlso join our halogenOS off-topic Group @halogenOSOT\n\nYou may visit http://halogenos.org/ for knowing more!"
