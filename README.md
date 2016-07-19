@@ -33,6 +33,8 @@ XManager has several commands that are only usable at certain ranks.
 |:--------|:------------|
 | [#!/]id | Returns group/SuperGroup ID or user id in pm. |
 | [#!/]XManager | Returns bot information. |
+| !time [area] | Displays the local time in that area. |
+| !translate [text] | Translate the text to English. |
 
 
 ## Private Message Commands
