@@ -96,16 +96,16 @@ end
 return {
   description = 'When bot enters group kick it.',
   usage = {
-    '!antibot enable: Enable Anti-bot on current chat',
-    '!antibot disable: Disable Anti-bot on current chat',
-    '!antibot allow <botId>: Allow <botId> on this chat',
-    '!antibot disallow <botId>: Disallow <botId> on this chat'
+    '[#!/]antibot enable: Enable Anti-bot on current chat',
+    '[#!/]antibot disable: Disable Anti-bot on current chat',
+    '[#!/]antibot allow <botId>: Allow <botId> on this chat',
+    '[#!/]antibot disallow <botId>: Disallow <botId> on this chat'
   },
   patterns = {
-    '^!antibot (allow) (%d+)$',
-    '^!antibot (disallow) (%d+)$',
-    '^!antibot (enable)$',
-    '^!antibot (disable)$',
+    '^[#!/]antibot (allow) (%d+)$',
+    '^[#!/]antibot (disallow) (%d+)$',
+    '^[#!/]antibot (enable)$',
+    '^[#!/]antibot (disable)$',
     '^!!tgservice (chat_add_user)$',
     '^!!tgservice (chat_add_user_link)$'
   },
