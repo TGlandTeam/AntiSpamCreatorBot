@@ -159,6 +159,8 @@ XManager has several commands that are only usable at certain ranks.
 | [#!/]leave | Bot will leave that group and can only be re-invited by an admin with bot phone number | Y | Y | Y |
 | [#!/]mp | (Mod Promote) Set user as a mod of supergroup. **TESTING** | N | Y | N |
 | [#!/]md | (Mod demote) Removes user from mod of supergroup. **TESTING**| N | Y | N |
+| [#!/]antibot enable/disable | Enable/Disable antibot on current chat | Y | Y | N |
+| [#!/]antibot allow/disallow <botId> | Allow/Disallow <botId> on this chat | Y | Y | N |
 
 ## Sudo Commands 
 
