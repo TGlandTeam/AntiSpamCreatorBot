@@ -228,9 +228,14 @@ function create_config( )
     "invite",
     "all",
     "leave_ban",
-	"supergroup",
-	"whitelist",
-	"msg_checks"
+    "supergroup",
+    "whitelist",
+    "msg_checks",
+    "anti-bot",
+    "images",
+    "media",
+    "time",
+    "translate"
     },
     sudo_users = {89522941,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -556,7 +561,7 @@ Lock group settings
 
 !unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
 Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
+*rtl: Delete msg if Right To Left Character is in name (Arabic)*
 *strict: disable strict settings enforcement (violating user will not be kicked)*
 
 !mute [all|audio|gifs|photo|video|service]
@@ -577,7 +582,7 @@ Returns chat settings
 Returns mutes for chat
 
 !muteuser [username]
-Mute a user in chat
+Mute a user in chat (This is a toggle. To unmute type !muteuser [username] again.)
 *If a muted user posts a message, the message is deleted automaically
 *only owners can mute | mods and owners can unmute
 
@@ -598,10 +603,29 @@ Set chat visibility in pm !chats or !chatlist commands
 !res [username]
 Returns users name and id by username
 
-
 !log
 Returns group logs
 *Search for kick reasons using [#RTL|#spam|#lockmember]
+
+!time [area]
+Displays the time of the area
+
+!translate [text]
+Translates certain text to English
+
+*Anti-Bot Feature:*
+!antibot enable
+Enable Anti-bot on current chat
+
+!antibot disable
+Disable Anti-bot on current chat
+
+!antibot allow <botId>
+Allow <botId> on this chat
+
+!antibot disallow <botId>
+Disallow <botId> on this chat
+
 
 **You can use "#", "!", or "/" to begin all commands
 
