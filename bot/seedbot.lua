@@ -232,12 +232,10 @@ function create_config( )
     "whitelist",
     "msg_checks",
     "anti-bot",
-    "images",
-    "media",
-    "time",
-    "translate"
+    "setver",
+    "plugins"
     },
-    sudo_users = {89522941,0,tonumber(our_id)},--Sudo users
+    sudo_users = {0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[آموزش ساخت ربات ضد اسپم 
 در کانال زیر 
