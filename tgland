@@ -3,13 +3,15 @@
 THIS_DIR=$(cd $(dirname $0); pwd)
 cd $THIS_DIR
 
+echo "Update Server Ubuntu Please Wait"
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev -y
-cd..
 
-Now Send cd AntiSpamCreatorBot then ./launch.sh install then ./launch.sh
+echo "Is being run please wait"
+./launch.sh install
+./launch.sh
 
 
  #Channel: @TGland
- #IT Channel: @ITTGland
+#IT Channel: @ITTGland
