@@ -11,5 +11,5 @@ _____________________________________________________________________
 Channel ID: [@TGland](https://telegram.me/TGland)
 _____________________________________________________________________
 
-IT Channel ID: [@ITTGland](https://telegram.me/ITTGland)
+IT Channel ID: [@nemidoonamchibeshe](https://telegram.me/nemidoonamchibeshe)
 _____________________________________________________________________
