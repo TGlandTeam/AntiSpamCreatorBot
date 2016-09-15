@@ -5,11 +5,6 @@
 
 _____________________________________________________________________
 
-BOT ID: [@AntiSpamCreatorBot](https://telegram.me/AntiSpamCreatorBot)
+Amoozesh: [@AntiSpamCreatorBot](https://telegram.me/EleGanceTM)
 _____________________________________________________________________
 
-Channel ID: [@TGland](https://telegram.me/TGland)
-_____________________________________________________________________
-
-IT Channel ID: [@nemidoonamchibeshe](https://telegram.me/nemidoonamchibeshe)
-_____________________________________________________________________
