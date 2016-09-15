@@ -558,7 +558,7 @@ Returns chat settings
 !muteslist
 Returns mutes for chat
 
-!muteuser [username]
+!silent [username]
 Mute a user in chat (This is a toggle. To unmute type !muteuser [username] again.)
 *If a muted user posts a message, the message is deleted automaically
 *only owners can mute | mods and owners can unmute
