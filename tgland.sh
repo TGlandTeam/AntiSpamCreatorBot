@@ -1,16 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Check if user has screen, if not install it
-if [ !$( which screen ) ]; then
-  echo "Update Server Ubuntu please wait"
-  sudo apt-get update
-  sudo apt-get upgrade -y
-  sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev make unzip git redis-server g++ libjansson-dev libpython-dev expat libexpat1-dev -y
-  chmod +x launch.sh
-  echo "Is being run please wait"
-  ./launch.sh install
-  ./launch.sh
-fi
+THIS_DIR=$(cd $(dirname $0); pwd)
+cd $THIS_DIR
 
-#Channel: @TGland
-#IT Channel: @ITTGland
+sudo apt-get update
+
+sudo apt-get upgrade -y
+
