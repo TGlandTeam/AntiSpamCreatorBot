@@ -5,6 +5,6 @@
 
 _____________________________________________________________________
 
-Amoozesh: [@AntiSpamCreatorBot](https://telegram.me/EleGanceTM)
+Amoozesh to channel: [@EleGanceTM](https://telegram.me/EleGanceTM)
 _____________________________________________________________________
 
